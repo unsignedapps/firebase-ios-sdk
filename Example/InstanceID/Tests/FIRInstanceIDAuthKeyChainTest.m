@@ -18,6 +18,7 @@
 #if !TARGET_OS_MACCATALYST
 // Skip keychain tests on Catalyst.
 
+#import <OCMock/OCMock.h>
 #import <XCTest/XCTest.h>
 
 #import <OCMock/OCMock.h>
