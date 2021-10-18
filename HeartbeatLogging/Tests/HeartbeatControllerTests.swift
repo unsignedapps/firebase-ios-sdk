@@ -27,9 +27,15 @@ class HeartbeatControllerTests: XCTestCase {
   }
 
   func testExample() throws {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests
-    // produce the correct results.
+    let (appID, userAgent) = ("AppID-123456789", "user_agent")
+    let logger = HeartbeatController(id: appID)
+
+    // Logging
+    logger.log(userAgent)
+
+    // Flushing
+    let flushed: HeartbeatInfo? = logger.flush()
+    _ /* flushedHeader */ = flushed?.headerValue()
   }
 
   func testPerformanceExample() throws {
