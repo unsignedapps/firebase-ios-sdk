@@ -846,8 +846,6 @@ let package = Package(
       ],
       sources: [
         "AppDelegateSwizzler/",
-        "SceneDelegateSwizzler/",
-        "Common/*.h",
       ],
       publicHeadersPath: "AppDelegateSwizzler/Public",
       cSettings: [
